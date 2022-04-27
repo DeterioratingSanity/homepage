@@ -42,15 +42,22 @@
   </style>
   <script>
     var up = 0;
+    
+    function assess() {
+      if (up === 0) {
+        openNav();
+      } else if (up === 1) {
+        closeNav(); 
+      }  
+    }
+    
     function openNav() {
       document.getElementById("sideNavBox").style.width = "250px";
       document.getElementById("main").style.marginLeft = "250px";
       up = 1;
       window.alert(up);
     }
-    
-    #main.onclick = function() {closeNav()};
-    
+        
     function closeNav() {
       document.getElementById("sideNavBox").style.width = "0";
       document.getElementById("main").style.marginLeft = "0";
@@ -68,7 +75,7 @@
     <a href="#">3</a>
   </div>
   
-  <span onclick="openNav()">open</span>
+  <span onclick="assess()">open</span>
   
   <div id="main">
  
