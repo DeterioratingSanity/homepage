@@ -41,13 +41,18 @@
     }
   </style>
   <script>
+    var up = 0;
     function openNav() {
       document.getElementById("sideNavBox").style.width = "250px";
       document.getElementById("main").style.marginLeft = "250px";
+      up = 1;
+      document.write(up);
     }
     function closeNav() {
       document.getElementById("sideNavBox").style.width = "0";
       document.getElementById("main").style.marginLeft = "0";
+      up = 0;
+      document.write(up);
     }
   </script>
 </head>
