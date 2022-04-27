@@ -51,21 +51,20 @@
         openNav();
       } else if (up === 1) {
         closeNav(); 
-      }  
+      } 
+      document.getElementById("icon").style.transform = "rotate(180deg)";
     }
     
     function openNav() {
       document.getElementById("sideNavBox").style.width = "250px";
       document.getElementById("main").style.marginLeft = "250px";
       up = 1;
-      window.alert(up);
     }
         
     function closeNav() {
       document.getElementById("sideNavBox").style.width = "0";
       document.getElementById("main").style.marginLeft = "0";
       up = 0;
-      window.alert(up);
     }
   </script>
 </head>
