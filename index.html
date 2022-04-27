@@ -48,6 +48,9 @@
       up = 1;
       window.alert(up);
     }
+    if (up === 1) {
+      document.getElementById("main").onclick = function() {closeNav()};
+    }
     function closeNav() {
       document.getElementById("sideNavBox").style.width = "0";
       document.getElementById("main").style.marginLeft = "0";
