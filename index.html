@@ -24,13 +24,6 @@
     .sideNav a:hover {
       color: #f1f1f1;
     }
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
     #main {
       transition: margin-left .5s;
       padding: 20px;
@@ -52,7 +45,7 @@
       } else if (up === 1) {
         closeNav(); 
       } 
-      document.getElementById("icon").style.transform = "rotate(180deg)";
+      document.getElementById("#icon").style.transform = "rotate(180deg)";
     }
     
     function openNav() {
@@ -71,7 +64,6 @@
 
 <body>
   <div id="sideNavBox" class="sideNav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#">1</a>
     <a href="#">2</a>
     <a href="#">3</a>
