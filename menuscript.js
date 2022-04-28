@@ -26,7 +26,7 @@ function closeNav() {
 
 var proximityX = -1;
 
-document.onmousemove = function(proximity) {
+document.mousemove = function(proximity) {
   proximityX = event.clientX;
 }
 if (proximityX < 0 && proximityX < 100) {
