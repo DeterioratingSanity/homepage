@@ -1,1 +1,27 @@
 https://www.w3schools.com/howto/howto_js_sidenav.asp
+
+proximity doodads
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_event_mouse_screenxy
+https://www.w3schools.com/jsref/prop_win_screenx.asp
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_screenx
+https://www.w3schools.com/jsref/prop_win_screenleft.asp
+https://www.w3schools.com/jsref/event_screenx.asp
+https://www.w3schools.com/jsref/dom_obj_event.asp
+https://stackoverflow.com/questions/51978126/using-multiple-script-tag-at-the-bottom-of-html
+https://www.google.com/search?q=screenX+mouseover+html&rlz=1C1GCEA_enUS987US987&oq=screenX+mouseover+html&aqs=chrome..69i57j33i160l2.3729j0j7&sourceid=chrome&ie=UTF-8&surl=1&safe=active&ssui=on
+https://stackoverflow.com/questions/6073505/what-is-the-difference-between-screenx-y-clientx-y-and-pagex-y
+https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event
+https://stackoverflow.com/questions/8318591/javascript-addeventlistener-using-to-create-a-mouseover-effect
+https://www.google.com/search?q=mousemove+v+mouseover&rlz=1C1GCEA_enUS987US987&oq=mousemove+v+mouseover&aqs=chrome..69i57j0i13j0i13i30j0i8i13i30j0i390l3.5032j0j7&sourceid=chrome&ie=UTF-8&surl=1&safe=active&ssui=on
+https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/screenX
+https://www.google.com/search?q=clientX+mouseover&rlz=1C1GCEA_enUS987US987&ei=SIlqYqmYIt6gkPIP55ik-Aw&ved=0ahUKEwip3J3q4bb3AhVeEEQIHWcMCc8Q4dUDCA4&uact=5&oq=clientX+mouseover&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAEBYQChAeMgUIABCGAzIFCAAQhgM6BAgAEEM6CAgAEIAEELEDOgUIABCRAjoFCAAQgAQ6DgguEIAEELEDEMcBENEDOg4ILhCABBDHARDRAxDUAjoLCC4QgAQQxwEQrwE6CwgAEIAEELEDEIMBOggIABCxAxCDAToHCAAQgAQQCjoGCAAQFhAeOgUIIRCgAUoECEEYAEoECEYYAFAAWJQlYJcoaAJwAXgAgAGFAYgB5w6SAQQxMC45mAEAoAEBwAEB&sclient=gws-wiz&surl=1&safe=active&ssui=on
+https://www.codegrepper.com/code-examples/javascript/event.clientx
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_event_mouse_screenxy
+https://www.google.com/search?q=detect+when+mouse+is+over+set+coordinates+js&rlz=1C1GCEA_enUS987US987&oq=detect+when+mouse+is+over+set+coordinates+js&aqs=chrome..69i57j33i160l2.6552j0j7&sourceid=chrome&ie=UTF-8&surl=1&safe=active&ssui=on
+https://stackoverflow.com/questions/3234256/find-mouse-position-relative-to-element
+https://www.codegrepper.com/code-examples/javascript/javascript+get+position+on+mouse+over
+https://www.google.com/search?q=document.onevent+javascript&rlz=1C1GCEA_enUS987US987&oq=document.onevent+javascript&aqs=chrome..69i57.6088j0j7&sourceid=chrome&ie=UTF-8&surl=1&safe=active&ssui=on
+https://developer.mozilla.org/en-US/docs/Web/Events/Event_handlers
+https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+https://teamtreehouse.com/community/dont-understand-the-meaning-of-functione#:~:text=The%20parameter%20(e)%20is%20automatically,button%20element%20that%20was%20clicked.
+https://stackoverflow.com/questions/4550427/preferred-alternative-to-onmouseover-for-touch
