@@ -28,7 +28,7 @@ var proximityX = document.querySelector('#main');
 document.addEventListener('mousemove', proximitySwitch);
 
 function proximitySwitch(e){
-  if (e.clientX < 150) {
+  if (e.clientX < 150 && up === 0) {
     assess();
   }
 }
