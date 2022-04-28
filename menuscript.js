@@ -24,12 +24,12 @@ function closeNav() {
 
 //proximity
 
-var proximityX = -1;
+var proximityX = pageX;
 
-document.mousemove = function(proximity) {
+document.onclick = function(proximity) {
   proximityX = event.clientX;
 }
-if (proximityX < 0 && proximityX < 100) {
+if (proximityX < 100) {
   assess();
   document.getElementById("gremlin").innerHTML = "proximityX"; 
 }
