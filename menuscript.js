@@ -24,14 +24,12 @@ function closeNav() {
 
 //proximity
 
-var proximitySwitch = event.screenX;
+var proximityX = -1;
 
-let screenLog = document.querySelector('#screen-log');
-document.addEventListener('mousemove', logKey);
-
-function logKey(e) {
-  screenLog.innerText = `
-    Screen X/Y: ${e.screenX}, ${e.screenY}
-    Client X/Y: ${e.clientX}, ${e.clientY}`;
+document.onmousemove = function(proximity) {
+  proximityX = event.clientX;
+}
+if (proximityX < 0 && proximityX < 100) {
+  assess();
 }
 
