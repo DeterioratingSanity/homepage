@@ -29,7 +29,7 @@ document.addEventListener('mouseover', proximitySwitch);
 
 function proximitySwitch(e){
   if (e.clientX < 150 && up === 0) {
-    assess();
+    openNav();
   }
 }
 
