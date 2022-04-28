@@ -32,10 +32,10 @@
 }
 #icon {
   font-size: 50px; 
-  background-color: #63d297ff;
-  margin-top: 0px;
 }
 #key {
-      display: inline-block;
-      transition: 1.5s;
+  display: inline-block;
+  transition: 1.5s;
+  background-color: #63d297ff;
+  margin-top: 0px;
 }
