@@ -25,11 +25,13 @@ function closeNav() {
 //proximity
 
 var proximityX = document.querySelector('#main');
-document.addEventListener('onmouseover', proximitySwitch);
+document.addEventListener('mousemove', proximitySwitch);
 
 function proximitySwitch(e){
   if (e.clientX < 150 && up === 0) {
     openNav();
+  } else if (e.clientX > 250 && up === 1) {
+    closeNav();   
   }
 }
 
