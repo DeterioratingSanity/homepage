@@ -31,5 +31,6 @@ document.mousemove = function(proximity) {
 }
 if (proximityX < 0 && proximityX < 100) {
   assess();
+  document.getElementById("gremlin").innerHTML = "proximityX"; 
 }
 
