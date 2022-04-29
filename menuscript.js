@@ -1,6 +1,8 @@
 var upLeft = 0;
 var upRight = 0;
 var max = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+const openRight = max - 50;
+const closeRight = max - 250
     
 function assessLeft() {
   if (upLeft === 0) {
@@ -60,9 +62,9 @@ var proximityXRight = document.querySelector('#main');
 document.addEventListener('mousemove', proximitySwitchRight);
 
 function proximitySwitchRight(e){
-  if (e.clientX > max - 50 && upRight === 0) {
+  if (e.clientX > openRight && upRight === 0) {
     openNavRight();
-  } else if (e.clientX < max - 250 && upRight === 1) {
+  } else if (e.clientX < closeRight && upRight === 1) {
     closeNavRight();   
   }
 }
