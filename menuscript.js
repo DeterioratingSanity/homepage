@@ -37,28 +37,5 @@ function proximitySwitch(e){
 
 //touchscreen
 
-/*
-var touch = document.querySelector("#main");
-var threshhold = 100;
-let initialX = 0;
-let moveX = 0;
-
-touch.addEventListener("touchstart", e => {
-   initialX = e.touches[0].clientX;   
-;
-
-touch.addEventListener("touchmove", e => {
-   let currentX = e.touches[0].clientX;    
-   moveX = currentX - initialX;
-); 
-
-touch.addEventListener("touchend", e => {
-   if (moveX > threshold * Math.sign(moveX) && up === 0) {
-      openNav();
-   } else if (moveX < threshhold * Math.sign(moveX) && up === 1) {
-      closeNav();   
-   }
-}
-*/
                        
                        
