@@ -2,7 +2,7 @@ var upLeft = 0;
 var upRight = 0;
 var max = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 var openRight = max - 50;
-var closeRight = max - 250
+var closeRight = max - 250;
     
 function assessLeft() {
   if (upLeft === 0) {
@@ -30,6 +30,9 @@ function openNavRight() {
   document.getElementById("main").style.marginRight = "250px";
   upRight = 1;
   document.getElementById("keyRight").style.transform = "rotateY(180deg)";
+  max = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  openRight = max - 50;
+  closeRight = max - 250;
 }
         
 function closeNavLeft() {
@@ -43,7 +46,6 @@ function closeNavRight() {
   document.getElementById("main").style.marginRight = "0";
   upRight = 0;
   document.getElementById("keyRight").style.transform = "rotateY(0deg)";
-  max = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 }
 
 //proximity
