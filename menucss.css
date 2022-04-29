@@ -37,3 +37,12 @@
   display: inline-block;
   transition: 1.5s;
 }
+
+/* primary */
+
+#content {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #e3e3e3;
+}
