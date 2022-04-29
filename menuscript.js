@@ -37,6 +37,25 @@ function proximitySwitch(e){
 
 //touchscreen
 
+let touchStartX = 0;
+let touchEndX = 0;
+
+const slider = document.getElementById('slider');
+
+function handleGesture() {
+  if (touchendX < touchstartX) alert('swiped left!')
+  if (touchendX > touchstartX) alert('swiped right!')
+}
+
+slider.addEventListener('touchstart', e => {
+   touchStartX = e.changedTouches[0].screenX
+})
+slider.addEventListener('touchend', e => {
+   touchend = e.changedTouches[0].screenX 
+   handleGesture();
+})
+
+/*
 var touch = document.querySelector("#main");
 var threshhold = 100;
 let initialX = 0;
@@ -60,5 +79,5 @@ touch.addEventListener("touchend", e => {
     
    moveX = 0;
 });
-                       
+*/                       
                        
