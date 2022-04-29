@@ -1,41 +1,72 @@
-var up = 0;
+var upLeft = 0;
+var upRight = 0;
     
-function assess() {
-  if (up === 0) {
-    openNav();
-  } else if (up === 1) {
-    closeNav(); 
+function assessLeft() {
+  if (upLeft === 0) {
+    openNavLeft();
+  } else if (upLeft === 1) {
+    closeNavLeft(); 
+  } 
+}
+function assessRight() {
+  if (upRight === 0) {
+    openNavRight();
+  } else if (upRight === 1) {
+    closeNavRight(); 
   } 
 }
     
-function openNav() {
-  document.getElementById("sideNavBox").style.width = "250px";
+function openNavLeft() {
+  document.getElementById("sideNavBoxLeft").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
-  up = 1;
-  document.getElementById("key").style.transform = "rotateY(180deg)";
+  upLeft = 1;
+  document.getElementById("keyLeft").style.transform = "rotateY(180deg)";
+}
+function openNavRight() {
+  document.getElementById("sideNavBoxRight").style.width = "250px";
+  document.getElementById("main").style.marginRight = "250px";
+  upRight = 1;
+  document.getElementById("keyRight").style.transform = "rotateY(180deg)";
 }
         
-function closeNav() {
-  document.getElementById("sideNavBox").style.width = "0";
+function closeNavLeft() {
+  document.getElementById("sideNavBoxLeft").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
-  up = 0;
-  document.getElementById("key").style.transform = "rotateY(0deg)";
+  upLeft = 0;
+  document.getElementById("keyLeft").style.transform = "rotateY(0deg)";
+}
+function closeNavRight() {
+  document.getElementById("sideNavBoxRight").style.width = "0";
+  document.getElementById("main").style.marginRight = "0";
+  upRight = 0;
+  document.getElementById("keyRight").style.transform = "rotateY(0deg)";
 }
 
 //proximity
 
-var proximityX = document.querySelector('#main');
-document.addEventListener('mousemove', proximitySwitch);
+var proximityXLeft = document.querySelector('#main');
+document.addEventListener('mousemove', proximitySwitchLeft);
 
-function proximitySwitch(e){
+function proximitySwitchLeft(e){
   if (e.clientX < 50 && up === 0) {
-    openNav();
+    openNavLeft();
   } else if (e.clientX > 250 && up === 1) {
-    closeNav();   
+    closeNavLeft();   
   }
 }
 
-//touchscreen
+var proximityXRight = document.querySelector('#main');
+document.addEventListener('mousemove', proximitySwitchRight);
+
+function proximitySwitchRight(e){
+  if (e.clientX > 250 && up === 1) {
+    openNavRight();
+  } else if (e.clientX < 50 && up === 0) {
+    closeNavRight();   
+  }
+}
+
+/*touchscreen
 
 let touchStartX = 0;
 let touchEndX = 0;
@@ -53,31 +84,6 @@ slider.addEventListener('touchstart', e => {
 slider.addEventListener('touchend', e => {
    touchend = e.changedTouches[0].screenX 
    handleGesture();
-})
-
-/*
-var touch = document.querySelector("#main");
-var threshhold = 100;
-let initialX = 0;
-let moveX = 0;
-
-touch.addEventListener("touchstart", e => {
-   initialX = e.touches[0].clientX;   
-});
-
-touch.addEventListener("touchmove", e => {
-   let currentX = e.touches[0].clientX;    
-   moveX = currentX - initialX;
-}); 
-
-touch.addEventListener("touchend", e => {
-   if (moveX > threshold * Math.sign(moveX) && up === 0) {
-      openNav();
-   } else if (moveX < threshhold * Math.sign(moveX) && up === 1) {
-      closeNav();   
-   }
-    
-   moveX = 0;
-});
-*/                       
+})                      
                        
+*/
