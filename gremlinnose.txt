@@ -25,3 +25,7 @@ https://developer.mozilla.org/en-US/docs/Web/Events/Event_handlers
 https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 https://teamtreehouse.com/community/dont-understand-the-meaning-of-functione#:~:text=The%20parameter%20(e)%20is%20automatically,button%20element%20that%20was%20clicked.
 https://stackoverflow.com/questions/4550427/preferred-alternative-to-onmouseover-for-touch
+
+right menu
+https://stackoverflow.com/questions/3437786/get-the-size-of-the-screen-current-web-page-and-browser-window
+https://stackoverflow.com/questions/24977456/how-do-i-create-an-infinite-loop-in-javascript
