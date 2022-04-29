@@ -4,11 +4,10 @@ var max;
 var openRight;
 var closeRight;
 
-for (;;) {
     max = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     openRight = max - 50;
     closeRight = max - 250;
-}
+
     
 function assessLeft() {
   if (upLeft === 0) {
