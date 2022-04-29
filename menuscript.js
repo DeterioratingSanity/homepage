@@ -44,12 +44,12 @@ let moveX = 0;
 
 touch.addEventListener("touchstart", e => {
    initialX = e.touches[0].clientX;   
-;
+});
 
 touch.addEventListener("touchmove", e => {
    let currentX = e.touches[0].clientX;    
    moveX = currentX - initialX;
-; 
+}); 
 
 touch.addEventListener("touchend", e => {
    if (moveX > threshold * Math.sign(moveX) && up === 0) {
