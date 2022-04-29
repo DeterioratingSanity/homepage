@@ -68,6 +68,9 @@
 
 /* primary */
 
+.body {
+  width: 60%; 
+}
 #content {
   margin: auto;
   width: 75%;
