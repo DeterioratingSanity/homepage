@@ -55,17 +55,6 @@ function proximitySwitchLeft(e){
   }
 }
 
-var proximityXRight = document.querySelector('#main');
-document.addEventListener('mousemove', proximitySwitchRight);
-
-function proximitySwitchRight(e){
-  if (e.clientX > 250 && up === 1) {
-    openNavRight();
-  } else if (e.clientX < 50 && up === 0) {
-    closeNavRight();   
-  }
-}
-
 /*touchscreen
 
 let touchStartX = 0;
