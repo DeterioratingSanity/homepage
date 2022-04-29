@@ -17,7 +17,6 @@ function assessRight() {
   } else if (upRight === 1) {
     closeNavRight(); 
   } 
-  max = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 }
     
 function openNavLeft() {
@@ -44,6 +43,7 @@ function closeNavRight() {
   document.getElementById("main").style.marginRight = "0";
   upRight = 0;
   document.getElementById("keyRight").style.transform = "rotateY(0deg)";
+  max = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 }
 
 //proximity
