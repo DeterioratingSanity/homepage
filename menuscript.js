@@ -44,10 +44,10 @@ function closeNavRight() {
 
 //proximity
 
-var proximityX = document.querySelector('#main');
-document.addEventListener('mousemove', proximitySwitch);
+var proximityXLeft = document.querySelector('#main');
+document.addEventListener('mousemove', proximitySwitchLeft);
 
-function proximitySwitch(e){
+function proximitySwitchLeft(e){
   if (e.clientX < 50 && upLeft === 0) {
     openNavLeft();
   } else if (e.clientX > 250 && upLeft === 1) {
