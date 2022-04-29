@@ -57,6 +57,8 @@ touch.addEventListener("touchend", e => {
    } else if (moveX < threshhold * Math.sign(moveX) && up === 1) {
       closeNav();   
    }
-}
+    
+   moveX = 0;
+});
                        
                        
