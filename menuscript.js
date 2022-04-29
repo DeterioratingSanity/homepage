@@ -37,6 +37,7 @@ function proximitySwitch(e){
 
 //touchscreen
 
+/*
 var touch = document.querySelector("#main");
 var threshhold = 100;
 let initialX = 0;
@@ -58,6 +59,6 @@ touch.addEventListener("touchend", e => {
       closeNav();   
    }
 }
-                       
+*/
                        
                        
