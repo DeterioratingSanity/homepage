@@ -44,14 +44,25 @@ function closeNavRight() {
 
 //proximity
 
-var proximityX = document.querySelector('#main');
-document.addEventListener('mousemove', proximitySwitch);
+var proximityXLeft = document.querySelector('#main');
+document.addEventListener('mousemove', proximitySwitchLeft);
 
 function proximitySwitch(e){
-  if (e.clientX < 50 && up === 0) {
-    openNav();
-  } else if (e.clientX > 250 && up === 1) {
-    closeNav();   
+  if (e.clientX < 50 && upLeft === 0) {
+    openNavLeft();
+  } else if (e.clientX > 250 && upLeft === 1) {
+    closeNavLeft();   
+  }
+}
+
+var proximityXRight = document.querySelector('#main');
+document.addEventListener('mousemove', proximitySwitchRight);
+
+function proximitySwitchRight(e){
+  if (e.clientX > 250 && upRight === 1) {
+    openNavRight();
+  } else if (e.clientX < 50 && upRight === 0) {
+    closeNavRight();   
   }
 }
 
