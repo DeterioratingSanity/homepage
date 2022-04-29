@@ -47,7 +47,7 @@ function closeNavRight() {
 var proximityXLeft = document.querySelector('#main');
 document.addEventListener('mousemove', proximitySwitchLeft);
 
-function proximitySwitch(e){
+function proximitySwitchLeft(e){
   if (e.clientX < 50 && upLeft === 0) {
     openNavLeft();
   } else if (e.clientX > 250 && upLeft === 1) {
@@ -59,9 +59,9 @@ var proximityXRight = document.querySelector('#main');
 document.addEventListener('mousemove', proximitySwitchRight);
 
 function proximitySwitchRight(e){
-  if (e.clientX > 250 && upRight === 1) {
+  if (e.clientX > 250 && upRight === 0) {
     openNavRight();
-  } else if (e.clientX < 50 && upRight === 0) {
+  } else if (e.clientX < 50 && upRight === 1) {
     closeNavRight();   
   }
 }
