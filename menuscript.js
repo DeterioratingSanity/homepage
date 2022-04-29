@@ -17,6 +17,7 @@ function assessRight() {
   } else if (upRight === 1) {
     closeNavRight(); 
   } 
+  max = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 }
     
 function openNavLeft() {
