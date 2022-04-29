@@ -59,9 +59,9 @@ var proximityXRight = document.querySelector('#main');
 document.addEventListener('mousemove', proximitySwitchRight);
 
 function proximitySwitchRight(e){
-  if (e.clientX < 50 && upRight === 0) {
+  if (e.clientX > $(window).width() - 50 && upRight === 0) {
     openNavRight();
-  } else if (e.clientX > 250 && upRight === 1) {
+  } else if (e.clientX < $(window).width() - 250 && upRight === 1) {
     closeNavRight();   
   }
 }
