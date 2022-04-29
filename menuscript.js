@@ -1,8 +1,8 @@
 var upLeft = 0;
 var upRight = 0;
 var max = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-const openRight = max - 50;
-const closeRight = max - 250
+var openRight = max - 50;
+var closeRight = max - 250
     
 function assessLeft() {
   if (upLeft === 0) {
