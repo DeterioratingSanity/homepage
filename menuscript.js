@@ -1,6 +1,6 @@
 var upLeft = 0;
 var upRight = 0;
-var max = $(window).width();
+var max = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     
 function assessLeft() {
   if (upLeft === 0) {
