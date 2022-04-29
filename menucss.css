@@ -1,4 +1,4 @@
-.sideNav {
+.sideNavLeft {
   height: 100%;
   width: 0;
   position: fixed;
@@ -10,7 +10,19 @@
   padding-top: 60px;
   transition: 0.5s;
 }
-.sideNav a {
+.sideNavRight {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.sideNavLeft a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -18,11 +30,23 @@
   display: block;
   transition: 0.3s;
 }
-.sideNav a:hover {
+.sideNavRight a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; 
+}
+.sideNavLeft a:hover {
+  color: #f1f1f1;
+}
+.sideNavRight a:hover {
   color: #f1f1f1;
 }
 #main {
   transition: margin-left .5s;
+  transition: margin-right .5s;
   padding: 20px;
   clear: both;
 }
@@ -34,7 +58,11 @@
   font-size: 50px; 
   user-select: none;
 }
-#key {
+#keyLeft {
+  display: inline-block;
+  transition: 1.5s;
+}
+#keyRight {
   display: inline-block;
   transition: 1.5s;
 }
