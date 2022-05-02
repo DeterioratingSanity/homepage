@@ -71,6 +71,7 @@
 .body {
   width: 70%;
   margin: auto;
+  transition: 0s;
 }
 #content {
   margin: auto;
