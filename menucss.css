@@ -36,7 +36,8 @@
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s; 
+  transition: 0.3s;
+  white-space: nowrap;
 }
 .sideNavLeft a:hover {
   color: #f1f1f1;
