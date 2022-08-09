@@ -50,6 +50,7 @@
   clear: both;
 }
 #icon {
+  transition: 0.5s;
   padding: 20px; 
 }
 @media screen and (max-height: 450px) {
