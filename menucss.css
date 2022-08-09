@@ -48,18 +48,19 @@
 #main {
   transition: 0.5s;
   padding: 20px;
+  padding-top: -10px;
   clear: both;
 }
 #icon {
   transition: 0.5s;
-  padding: 20px; 
+  padding: 20px;
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 #icon {
-  font-size: 50px; 
+  font-size: 50px;
   user-select: none;
 }
 #keyLeft {
@@ -90,6 +91,3 @@
   font-size: 50px;
   line-height: 20px;
 }
-
-
-
