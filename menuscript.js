@@ -26,26 +26,26 @@ function assessRight() {
     
 function openNavLeft() {
   document.getElementById("sideNavBoxLeft").style.width = "250px";
-  //document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("icon").style.marginLeft = "250px";
   upLeft = 1;
   document.getElementById("keyLeft").style.transform = "rotateY(180deg)";
 }
 function openNavRight() {
   document.getElementById("sideNavBoxRight").style.width = "250px";
-  //document.getElementById("main").style.marginRight = "250px";
+  document.getElementById("icon").style.marginRight = "250px";
   upRight = 1;
   document.getElementById("keyRight").style.transform = "rotateY(180deg)";
 }
         
 function closeNavLeft() {
   document.getElementById("sideNavBoxLeft").style.width = "0";
-  //document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("icon").style.marginLeft = "0";
   upLeft = 0;
   document.getElementById("keyLeft").style.transform = "rotateY(0deg)";
 }
 function closeNavRight() {
   document.getElementById("sideNavBoxRight").style.width = "0";
-  //document.getElementById("main").style.marginRight = "0";
+  document.getElementById("icon").style.marginRight = "0";
   upRight = 0;
   document.getElementById("keyRight").style.transform = "rotateY(0deg)";
 }
