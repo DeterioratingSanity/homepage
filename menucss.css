@@ -66,12 +66,12 @@
 #keyLeft {
   display: inline-block;
   transition: 1.5s;
-  padding-bottom: 0;
+  padding-top: 10px;
 }
 #keyRight {
   display: inline-block;
   transition: 1.5s;
-  padding-bottom: 0;
+  padding-top: 10px;
 }
 
 /* primary */
