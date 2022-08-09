@@ -4,10 +4,14 @@ var max;
 var openRight;
 var closeRight;
 
+  function pageWidth(){
     max = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     openRight = max - 50;
     closeRight = max - 250;
+  }
 
+  window.addEventListener("resize",pageWidth);
+  pageWidth();
     
 function assessLeft() {
   if (upLeft === 0) {
