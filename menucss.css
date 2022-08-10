@@ -67,11 +67,13 @@
   display: inline-block;
   transition: 1.5s;
   margin-bottom: -40px;
+  position: fixed;
 }
 #keyRight {
   display: inline-block;
   transition: 1.5s;
   margin-bottom: -40px;
+  position: fixed;
 }
 
 /* primary */
