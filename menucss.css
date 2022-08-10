@@ -62,6 +62,7 @@
 #icon {
   font-size: 50px;
   user-select: none;
+  position: fixed; /*maybe ungoofies it?*/
 }
 #keyLeft {
   display: inline-block;
