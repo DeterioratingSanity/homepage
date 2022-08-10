@@ -36,7 +36,7 @@ function openNavLeft() {
 }
 function openNavRight() {
   document.getElementById("sideNavBoxRight").style.width = "250px";
-  document.getElementById("icon").style.marginRight = "250px";
+  document.getElementById("icon").style.right = "270px";
   upRight = 1;
   document.getElementById("keyRight").style.transform = "rotateY(180deg)";
 }
@@ -49,7 +49,7 @@ function closeNavLeft() {
 }
 function closeNavRight() {
   document.getElementById("sideNavBoxRight").style.width = "0";
-  document.getElementById("icon").style.marginRight = "0";
+  document.getElementById("icon").style.right = "20";
   upRight = 0;
   document.getElementById("keyRight").style.transform = "rotateY(0deg)";
 }
