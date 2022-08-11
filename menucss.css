@@ -93,7 +93,12 @@
   border-right: 2px solid #e3e3e3;
 }
 #title {
-  text-align: center;
-  font-size: 50px;
-  line-height: 20px;
+  margin-top: -20px;
+}
+#titleBox {
+  position: sticky;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
 }

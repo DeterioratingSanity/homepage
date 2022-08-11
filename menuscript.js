@@ -12,22 +12,22 @@ var closeRight;
 
   window.addEventListener("resize",pageWidth);
   pageWidth();
-    
+
 function assessLeft() {
   if (upLeft === 0) {
     openNavLeft();
   } else if (upLeft === 1) {
-    closeNavLeft(); 
-  } 
+    closeNavLeft();
+  }
 }
 function assessRight() {
   if (upRight === 0) {
     openNavRight();
   } else if (upRight === 1) {
-    closeNavRight(); 
-  } 
+    closeNavRight();
+  }
 }
-    
+
 function openNavLeft() {
   document.getElementById("sideNavBoxLeft").style.width = "250px";
   document.getElementById("icon").style.marginLeft = "250px";
@@ -40,7 +40,7 @@ function openNavRight() {
   upRight = 1;
   document.getElementById("keyRight").style.transform = "rotateY(180deg)";
 }
-        
+
 function closeNavLeft() {
   document.getElementById("sideNavBoxLeft").style.width = "0";
   document.getElementById("icon").style.marginLeft = "0";
@@ -63,7 +63,7 @@ function proximitySwitchLeft(e){
   if (e.clientX < 50 && upLeft === 0) {
     openNavLeft();
   } else if (e.clientX > 250 && upLeft === 1) {
-    closeNavLeft();   
+    closeNavLeft();
   }
 }
 
@@ -74,7 +74,20 @@ function proximitySwitchRight(e){
   if (e.clientX > openRight && upRight === 0) {
     openNavRight();
   } else if (e.clientX < closeRight && upRight === 1) {
-    closeNavRight();   
+    closeNavRight();
+  }
+}
+
+//headerbar
+window.addEventListener('scroll', headerSwitch);
+
+function headerSwitch() {
+  if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("title").src = "littlelogo.png";
+    document.getElementById("title").style.width = "150px";
+  } else {
+    document.getElementById("title").src = "logo.png";
+    document.getElementById("title").style.width = "500px";
   }
 }
 
@@ -94,8 +107,8 @@ slider.addEventListener('touchstart', e => {
    touchStartX = e.changedTouches[0].screenX
 })
 slider.addEventListener('touchend', e => {
-   touchend = e.changedTouches[0].screenX 
+   touchend = e.changedTouches[0].screenX
    handleGesture();
-})                      
-                       
+})
+
 */
