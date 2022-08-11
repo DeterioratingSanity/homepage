@@ -86,7 +86,7 @@ function headerSwitch() {
     document.getElementById("title").src = "littlelogo.png";
     document.getElementById("title").style.width = "150px";
     document.getElementById("title").style.marginTop = "-20px";
-  } else if(document.body.scrollTop < 30 || document.documentElement.scrollTop < 30) {
+  } else if(document.body.scrollTop < 15 || document.documentElement.scrollTop < 15) {
     document.getElementById("title").src = "logo.png";
     document.getElementById("title").style.width = "500px";
     document.getElementById("title").style.marginTop = "-80px";
