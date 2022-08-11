@@ -89,7 +89,7 @@ function headerSwitch() {
   } else if(document.body.scrollTop < 30 || document.documentElement.scrollTop < 30) {
     document.getElementById("title").src = "logo.png";
     document.getElementById("title").style.width = "500px";
-    document.getElementById("title").style.width = "-80px";
+    document.getElementById("title").style.marginTop = "-80px";
   }
 }
 
