@@ -94,6 +94,7 @@
 }
 #title {
   margin-top: -20px;
+  transition: 0.5s;
 }
 #titleBox {
   position: sticky;
