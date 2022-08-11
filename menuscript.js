@@ -91,6 +91,8 @@ function headerSwitch() {
   }
 }
 
+headerSwitch();
+
 /*touchscreen
 
 let touchStartX = 0;
