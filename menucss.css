@@ -98,7 +98,7 @@
 }
 #titleBox {
   position: sticky;
-  top: 20px;
+  top: 5px;
   display: flex;
   justify-content: center;
   transition: 0.5s;
