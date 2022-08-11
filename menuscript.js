@@ -91,7 +91,6 @@ function headerSwitch() {
   }
 }
 
-headerSwitch();
 
 /*touchscreen
 
