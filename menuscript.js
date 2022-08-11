@@ -85,10 +85,10 @@ function headerSwitch() {
   if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("title").src = "littlelogo.png";
     document.getElementById("title").style.width = "150px";
-  } else {
-    document.getElementById("title").src = "logo.png";
-    document.getElementById("title").style.width = "500px";
-  }
+  } //else {
+//    document.getElementById("title").src = "logo.png";
+//    document.getElementById("title").style.width = "500px";
+//  }
 }
 
 /*touchscreen
