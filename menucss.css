@@ -59,7 +59,7 @@
   font-size: 50px;
   user-select: none;
   position:sticky;
-  top: 0;
+  top: 20px;
   transition: 0.5s;
   padding: 20px;
   z-index: 4;
@@ -68,13 +68,13 @@
   display: inline-block;
   transition: 1.5s;
   margin-bottom: -40px;
-  /*position: fixed;*/
+  position: sticky;
 }
 #keyRight {
   display: inline-block;
   transition: 1.5s;
   margin-bottom: -40px;
-  /*position: fixed;*/
+  position: sticky;
 }
 
 /* primary */
