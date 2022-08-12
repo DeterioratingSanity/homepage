@@ -51,10 +51,6 @@
   padding-top: 0;
   clear: both;
 }
-#icon {
-  transition: 0.5s;
-  padding: 20px;
-}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -63,7 +59,10 @@
   font-size: 50px;
   user-select: none;
   position:sticky;
-  top: 20px;
+  top: 0;
+  transition: 0.5s;
+  padding: 20px;
+  z-index: 4;
 }
 #keyLeft {
   display: inline-block;
@@ -80,10 +79,11 @@
 
 /* primary */
 
-.body {
+#body {
   width: 70%;
   margin: auto;
-  transition: 0s;
+  transition: 0.7s;
+  margin-top: 520px;
 }
 #content {
   margin: auto;
@@ -92,14 +92,20 @@
   border-left: 2px solid #e3e3e3;
   border-right: 2px solid #e3e3e3;
 }
-#title {
-  margin-top: -80px;
+#title  {
   transition: 0.5s;
+  margin-top: -30px;
+  width: 500px;
 }
 #titleBox {
-  position: sticky;
-  top: 20px;
-  display: flex;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  text-align:center;
+  transform: translateX(-50%);
   justify-content: center;
   transition: 0.5s;
+  background-color: white;
+  padding-top:20px;
+  width: 70%;
 }

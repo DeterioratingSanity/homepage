@@ -79,17 +79,19 @@ function proximitySwitchRight(e){
 }
 
 //headerbar
-window.addEventListener('scroll', headerSwitch);
+document.addEventListener('scroll', headerSwitch);
 
 function headerSwitch() {
-  if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
     document.getElementById("title").src = "littlelogo.png";
     document.getElementById("title").style.width = "150px";
     document.getElementById("title").style.marginTop = "-20px";
-  } else if(document.body.scrollTop < 15 || document.documentElement.scrollTop < 15) {
+    document.getElementById("body").style.marginTop = "200px";
+  } else {
     document.getElementById("title").src = "logo.png";
     document.getElementById("title").style.width = "500px";
-    document.getElementById("title").style.marginTop = "-80px";
+    document.getElementById("title").style.marginTop = "-30px";
+    document.getElementById("body").style.marginTop = "520px";
   }
 }
 
