@@ -5,6 +5,9 @@ body{
  color:#473B38;
  background-color: #FDF8F2;
 }
+body::-webkit-scrollbar {
+ display: none;
+}
 /*
 #scrollSVG {
 margin: 0;
