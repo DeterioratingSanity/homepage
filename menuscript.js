@@ -4,6 +4,7 @@ var max;
 var openRight;
 var closeRight;
 
+
   function pageWidth(){
     max = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     openRight = max - 50;
@@ -79,7 +80,8 @@ function proximitySwitchRight(e){
 }
 
 //headerbar
-document.addEventListener('scroll', headerSwitch);
+document.addEventListener('scroll',headerSwitch);
+
 
 function headerSwitch() {
   if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
@@ -114,7 +116,24 @@ function headerSwitch() {
     document.getElementById("rightBorderTwo").style.marginLeft = "58%";
   }
 }
+/*
+document.addEventListener('scroll',scrollBar);
 
+var pathSVG = document.getElementById("pathSVG");
+var length = pathSVG.getTotalLength();
+
+pathSVG.style.strokeDasharray = length;
+pathSVG.style.strokeDashoffset = length;
+
+function scrollBar() {
+  var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+  var draw = length * scrollpercent;
+
+  // Reverse the drawing (when scrolling upwards)
+  pathSVG.style.strokeDashoffset = length - draw;
+}
+*/
 
 /*touchscreen
 
