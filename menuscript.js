@@ -92,6 +92,7 @@ function headerSwitch() {
     document.getElementById("body").style.marginTop = "200px";
     document.getElementById("borderOne").style.top = "30px";
     document.getElementById("borderTwo").style.top = "105px";
+    document.getElementById("titleBox").style.boxShadow = "0 1px #473B38";
   } else {
     document.getElementById("title").src = "logo.png";
     document.getElementById("title").style.height = "500px";
@@ -100,6 +101,7 @@ function headerSwitch() {
     document.getElementById("body").style.marginTop = "520px";
     document.getElementById("borderOne").style.top = "100px";
     document.getElementById("borderTwo").style.top = "365px";
+    document.getElementById("titleBox").style.boxShadow = "0 0 #473B38";
   }
 }
 /*
