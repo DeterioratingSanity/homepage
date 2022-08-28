@@ -161,3 +161,11 @@ z-index: 2;
   margin-left: 58%;
   transition: 0.5s;
 }
+
+/** **/
+
+.bioPic{
+  border: 6px ridge grey;
+  margin-right: 2%;
+  float: left;
+}
