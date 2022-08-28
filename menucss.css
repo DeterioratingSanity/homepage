@@ -24,7 +24,7 @@ z-index: 2;
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: #473B38;
@@ -36,7 +36,7 @@ z-index: 2;
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   right: 0;
   background-color: #473B38;
@@ -114,58 +114,60 @@ z-index: 2;
   padding: 10px;
   border-left: 2px solid #e3e3e3;
   border-right: 2px solid #e3e3e3;
+  z-index:4;
 }
 #title  {
+  position:relative;
   transition: 0.5s;
   margin-top: -30px;
-  width: 500px;
-
+  object-fit:cover;
+  height: 500px;
+  width:400px;
+  z-index:10;
+  background-color:#FDF8F2;
 }
 #titleBox {
   position: fixed;
   top: 0;
+  transition: 0.5s;
+  z-index:3;
+  padding-top:20px;
+  width: 100%;
+  background-color:#FDF8F2;
+  position:fixed;
   left: 50%;
   text-align:center;
   transform: translateX(-50%);
   justify-content: center;
-  transition: 0.5s;
-  background-color: #FDF8F2;
-  padding-top:20px;
-  width: 70%;
+  z-index:3;
+}
+#holder{
+  position:sticky;
+  background-color:#FDF8F2;
 }
 #borderOne {
   position: fixed;
   top: 100px;
-  width: 24%;
-  margin-left: 15%;
+  width: 80%;
+  margin-left: 10%;
   transition: 0.5s;
-}
-#rightBorderOne {
-  position: fixed;
-  top: 100px;
-  width: 24%;
-  margin-left: 58%;
-  transition: 0.5s;
+  z-index:1;
+  color:#473B38;
 }
 #borderTwo {
   position: fixed;
   top: 365px;
-  width: 24%;
-  margin-left: 15%;
+  width: 80%;
+  margin-left: 10%;
   transition: 0.5s;
-}
-#rightBorderTwo {
-  position: fixed;
-  top: 365px;
-  width: 24%;
-  margin-left: 58%;
-  transition: 0.5s;
+  z-index:1;
+  color:#473B38;
 }
 
 /** **/
 
 .bioPic{
-  border: 6px ridge grey;
+  border: 6px ridge #70615d;
   margin-right: 2%;
   float: left;
 }

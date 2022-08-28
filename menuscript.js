@@ -86,34 +86,20 @@ document.addEventListener('scroll',headerSwitch);
 function headerSwitch() {
   if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
     document.getElementById("title").src = "littlelogo.png";
+    document.getElementById("title").style.height = "150px";
     document.getElementById("title").style.width = "150px";
     document.getElementById("title").style.marginTop = "-20px";
     document.getElementById("body").style.marginTop = "200px";
     document.getElementById("borderOne").style.top = "30px";
     document.getElementById("borderTwo").style.top = "105px";
-    document.getElementById("rightBorderOne").style.top = "30px";
-    document.getElementById("rightBorderTwo").style.top = "105px";
-    document.getElementById("borderOne").style.width = "30%";
-    document.getElementById("borderTwo").style.width = "30%";
-    document.getElementById("rightBorderOne").style.width = "30%";
-    document.getElementById("rightBorderTwo").style.width = "30%";
-    document.getElementById("rightBorderOne").style.marginLeft = "52%";
-    document.getElementById("rightBorderTwo").style.marginLeft = "52%";
   } else {
     document.getElementById("title").src = "logo.png";
-    document.getElementById("title").style.width = "500px";
+    document.getElementById("title").style.height = "500px";
+    document.getElementById("title").style.width = "400px";
     document.getElementById("title").style.marginTop = "-30px";
     document.getElementById("body").style.marginTop = "520px";
     document.getElementById("borderOne").style.top = "100px";
     document.getElementById("borderTwo").style.top = "365px";
-    document.getElementById("rightBorderOne").style.top = "100px";
-    document.getElementById("rightBorderTwo").style.top = "365px";
-    document.getElementById("borderOne").style.width = "24%";
-    document.getElementById("borderTwo").style.width = "24%";
-    document.getElementById("rightBorderOne").style.width = "24%";
-    document.getElementById("rightBorderTwo").style.width = "24%";
-    document.getElementById("rightBorderOne").style.marginLeft = "58%";
-    document.getElementById("rightBorderTwo").style.marginLeft = "58%";
   }
 }
 /*
