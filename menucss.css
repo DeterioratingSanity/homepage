@@ -113,12 +113,21 @@ z-index: 2;
   margin: auto;
   transition: 0.7s;
 }
+.bodyFill::first-letter{
+  font-size: 2em;
+	padding: 0px 3px;
+	margin-right: 6px;
+	border-radius: 2px;
+	background-color: #70615d;
+	color: #FDF8F2;
+	box-shadow: 3px 3px 0 #473B38;
+}
 #content {
   margin: auto;
   width: 75%;
   padding: 10px;
-  border-left: 2px solid #e3e3e3;
-  border-right: 2px solid #e3e3e3;
+  border-left: 1px solid #473B38;
+  border-right: 1px solid #473B38;
   z-index:4;
 }
 #title  {
@@ -159,6 +168,9 @@ z-index: 2;
   transition: 0.5s;
   z-index:1;
   color:#473B38;
+  background-color:#473B38;
+  height:1px;
+  border-width:0;
 }
 #borderTwo {
   position: fixed;
@@ -168,6 +180,9 @@ z-index: 2;
   transition: 0.5s;
   z-index:1;
   color:#473B38;
+  background-color:#473B38;
+  height:1px;
+  border-width:0;
 }
 
 /** **/
