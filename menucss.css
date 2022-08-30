@@ -191,6 +191,17 @@ z-index: 2;
   margin-right: 2%;
   float: left;
   margin-bottom:2px;
+  width:25%;
+}
+@media screen and (max-width:900px){
+  .floatPic{
+    width:50%;
+  }
+}
+@media screen and (max-width:600px){
+  .floatPic{
+    width:100%;
+  }
 }
 
 .borderSet{
