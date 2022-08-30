@@ -192,6 +192,7 @@ z-index: 2;
   float: left;
   margin-bottom:2px;
   width:25%;
+  background-color:black;
 }
 @media screen and (max-width:900px){
   .floatPic{
@@ -226,6 +227,7 @@ z-index: 2;
   bottom:0;
   left:0;
   border-top:6px solid #473B38;
+  padding:0;
   z-index: 3;
   width: 100%;
 }
