@@ -82,7 +82,6 @@ function proximitySwitchRight(e){
 //headerbar
 document.addEventListener('scroll',headerSwitch);
 
-
 function headerSwitch() {
   if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
     document.getElementById("title").src = "littlelogo.png";
@@ -93,6 +92,7 @@ function headerSwitch() {
     document.getElementById("borderOne").style.top = "30px";
     document.getElementById("borderTwo").style.top = "105px";
     document.getElementById("titleBox").style.boxShadow = "0 1px #473B38";
+    document.getElementById("footer").style.height = "2.5em";
   } else {
     document.getElementById("title").src = "logo.png";
     document.getElementById("title").style.height = "500px";
@@ -102,6 +102,7 @@ function headerSwitch() {
     document.getElementById("borderOne").style.top = "100px";
     document.getElementById("borderTwo").style.top = "365px";
     document.getElementById("titleBox").style.boxShadow = "0 0 #473B38";
+    document.getElementById("footer").style.height = "0";
   }
 }
 
