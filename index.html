@@ -22,11 +22,11 @@
   <div id="sideNavBoxLeft" class="sideNavLeft">
     <a href="#">Home</a>
     <a href="projects.html">Projects</a>
-    <a href="#">Members</a>
+    <a href="#">Left</a>
   </div>
 
   <div id="sideNavBoxRight" class="sideNavRight">
-    <a href="#">Placeholder Gremlin</a>
+    <a href="#">Right</a>
   </div>
 
   <div id="icon"> <span id="keyLeft" onclick="assessLeft()" style="float: left">→</span> <span id="keyRight" onclick="assessRight()" style="float: right">←</span> </div>
@@ -62,11 +62,29 @@
         sure how I am going to navegate around this.
         <br><br><br>
 
-        <div id="buttonHolder">
-          <button type="button" id="button">
+        <div class="buttonHolder">
+          <button type="button" class="button" id="modalButton">
             Button
           </button>
         </div>
+
+        <div id="modalBox" class="modal">
+          <div class="modalContent">
+            <span class="close">&times;</span>
+            <p id="modalStuff">Velit dignissim sodales ut eu sem integer. Dolor sed viverra ipsum nunc aliquet bibendum. Sollicitudin ac orci phasellus egestas. Nisl tincidunt eget
+            nullam non nisi est sit amet. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Scelerisque mauris pellentesque pulvinar pellentesque habitant
+            morbi tristique. Euismod elementum nisi quis eleifend quam adipiscing. Eu nisl nunc mi ipsum faucibus vitae aliquet. Lectus arcu bibendum at varius vel
+            pharetra vel turpis nunc. Elementum nibh tellus molestie nunc. Consequat ac felis donec et odio pellentesque diam volutpat. Diam sollicitudin tempor id
+            eu. Amet mauris commodo quis imperdiet. Magna sit amet purus gravida quis blandit turpis. Penatibus et magnis dis parturient montes nascetur ridiculus.
+            Laoreet sit amet cursus sit amet dictum sit amet. Vitae congue eu consequat ac. Iaculis urna id volutpat lacus laoreet. Et ligula ullamcorper malesuada
+            proin libero nunc consequat interdum varius.</p>
+          </div>
+        </div>
+
+        <script
+        src="modal.js">
+        </script>
+
 
         <br><br>
         <p class="bodyFill">
