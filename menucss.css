@@ -337,20 +337,20 @@ z-index: 2;
   left: -10%;
 }
 
-.button:hover::before{
+.buttonHolder:hover > .button::before{
   left: 100%;
   right: -30%;
 }
-.button:hover::after{
+.buttonHolder:hover > .button::after{
   right: 100%;
   left: -30%;
 }
 @media screen and (max-width:620px){
-  .button:hover::before{
+  .buttonHolder:hover > .button::before{
     left: 100%;
     right: -10%;
   }
-  .button:hover::after{
+  .buttonHolder:hover > .button::after{
     right: 100%;
     left: -10%;
   }
