@@ -404,12 +404,10 @@ z-index: 2;
   width:2.5em;
   height:auto;
   transition:.5s;
-  filter: drop-shadow( 0 3px 10px transparent);
   vertical-align:middle;
 }
 .icons:hover{
   width:3em;
-  height:2.5em;
   fill:#419418;
 }
 #buttonFill::before, #buttonFill::after {
