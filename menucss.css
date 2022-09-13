@@ -472,3 +472,21 @@ z-index: 2;
     left: -10%;
   }
 }
+@media screen and (max-width:650px){
+  #buttonFill::before{
+    left: 100%;
+    right: 0;
+  }
+  #buttonFill::after{
+    right: 100%;
+    left: 0;
+  }
+  .buttonHolder:hover > #buttonFill::before{
+    left: 100%;
+    right: 0;
+  }
+  .buttonHolder:hover > #buttonFill::after{
+    right: 100%;
+    left: 0;
+  }
+}
