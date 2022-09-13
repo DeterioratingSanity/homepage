@@ -409,6 +409,7 @@ z-index: 2;
 }
 .icons:hover{
   width:3em;
+  height:2.5em;
   fill:#419418;
 }
 #buttonFill::before, #buttonFill::after {
