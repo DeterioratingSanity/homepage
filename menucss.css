@@ -286,14 +286,15 @@ z-index: 2;
 	align-items: center;
   margin:auto;
   z-index:1;
-  max-width:20em;
+  width:20em;
+  max-width:70%;
   padding:10px;
   border-top: 2px solid #70615d;
   border-bottom: 2px solid #70615d;
   transition: 0.8s ease;
 }
 .buttonHolder:hover{
-  max-width:25em;
+  width:25em;
 }
 @media screen and (max-width:820px){
   .buttonHolder:hover{
@@ -350,11 +351,11 @@ z-index: 2;
 @media screen and (max-width:620px){
   .buttonHolder:hover > .button::before{
     left: 100%;
-    right: -10%;
+    right: -15%;
   }
   .buttonHolder:hover > .button::after{
     right: 100%;
-    left: -10%;
+    left: -15%;
   }
 }
 
@@ -421,6 +422,15 @@ z-index: 2;
   border:0;
   background-color:inherit;
 }
+/*
+#setPlace fixes a pronouncd x-axis jitter in the resizing which occurs only in some
+viewport widths. I have not the fainted clue why the problem occurs, nor why this
+fixes it, but I am loathe to question the only attempt which has been at all
+fruitful.
+Comment out the first svg and its button if you'd like to see the jitterbug state
+of affairs. It occurs at viewport 925px on my monitor, though it does not occur
+at viewport 900px...
+*/
 .buttonHolder > #buttonFill::before, #buttonFill::after {
   content: '';
     position: absolute;
@@ -455,21 +465,22 @@ z-index: 2;
     left: -10%;
   }
 }
-@media screen and (max-width:650px){
-  #buttonFill::before{
+
+@media screen and (max-width:620px){
+  .buttonHolder > #buttonFill::before{
     left: 100%;
     right: 0;
   }
-  #buttonFill::after{
+  .buttonHolder > #buttonFill::after{
     right: 100%;
     left: 0;
   }
-  .buttonHolder:hover > #buttonFill::before{
-    left: 100%;
-    right: 0;
-  }
-  .buttonHolder:hover > #buttonFill::after{
-    right: 100%;
-    left: 0;
-  }
+.buttonHolder:hover > #buttonFill::before{
+  left: 100%;
+  right: 0;
+}
+.buttonHolder:hover > #buttonFill::after{
+  right: 100%;
+  left: 0;
+}
 }
