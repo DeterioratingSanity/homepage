@@ -314,7 +314,7 @@ body::-webkit-scrollbar {
     position: absolute;
     background: #70615d;
     height: 2px;
-    top: 50%;
+    top: 27px; /*prevents refreshing to wiggle them*/
     transition: 0.8s ease;
 }
 .button::before{
@@ -397,7 +397,7 @@ body::-webkit-scrollbar {
   transform: scale(1.15);
   fill:#419418;
 }
-#buttonFill {
+.buttonFill {
   display: block;
     position: relative;
   color: #70615d;
@@ -421,7 +421,7 @@ of affairs. It occurs at viewport 925px on my monitor, though it does not occur
 at viewport 900px...
 */
 
-.buttonHolder > #buttonFill::before, #buttonFill::after {
+.buttonHolder > .buttonFill::before, .buttonFill::after {
   content: '';
     position: absolute;
     background: #70615d;
@@ -429,48 +429,48 @@ at viewport 900px...
     top: 50%;
     transition: 0.8s ease;
 }
-.buttonHolder > #buttonFill::before{
+.buttonHolder > .buttonFill::before{
   left: 100%;
   right: -10%;
 }
-.buttonHolder > #buttonFill::after{
+.buttonHolder > .buttonFill::after{
   right: 100%;
   left: -10%;
 }
-.buttonHolder:hover > #buttonFill::before{
+.buttonHolder:hover > .buttonFill::before{
   left: 100%;
   right: -20%;
 }
-.buttonHolder:hover > #buttonFill::after{
+.buttonHolder:hover > .buttonFill::after{
   right: 100%;
   left: -20%;
 }
 
 @media screen and (max-width:870px){
-  .buttonHolder:hover > #buttonFill::before{
+  .buttonHolder:hover > .buttonFill::before{
     left: 100%;
     right: -10%;
   }
-  .buttonHolder:hover > #buttonFill::after{
+  .buttonHolder:hover > .buttonFill::after{
     right: 100%;
     left: -10%;
   }
 }
 
 @media screen and (max-width:620px){
-  .buttonHolder > #buttonFill::before{
+  .buttonHolder > .buttonFill::before{
     left: 100%;
     right: 0;
   }
-  .buttonHolder > #buttonFill::after{
+  .buttonHolder > .buttonFill::after{
     right: 100%;
     left: 0;
   }
-  .buttonHolder:hover > #buttonFill::before{
+  .buttonHolder:hover > .buttonFill::before{
     left: 100%;
     right: 0;
   }
-  .buttonHolder:hover > #buttonFill::after{
+  .buttonHolder:hover > .buttonFill::after{
     right: 100%;
     left: 0;
   }
