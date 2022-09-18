@@ -405,6 +405,7 @@ body::-webkit-scrollbar {
   vertical-align:middle;
 }
 #setPlace{
+  height:100%;
   margin-top:3px;
   vertical-align:top;
   transform:scale(1.2);
